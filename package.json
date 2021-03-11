@@ -9,9 +9,21 @@
     "type": "git",
     "url": "https://github.com/saarthdeshpande/github-repo-parser.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "github",
+    "git",
+    "repository",
+    "repo",
+    "parser",
+    "parse",
+    "absolute file path",
+    "extension"
+  ],
+  "author": "Saarth Deshpande <deshpandesaarth@gmail.com> (https://saarthdeshpande.ml/)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saarthdeshpande/github-repo-parser/issues"
+  },
   "dependencies": {
     "@octokit/core": "^3.2.5"
   },
