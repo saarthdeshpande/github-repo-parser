@@ -1,0 +1,15 @@
+{
+  "name": "github-repo-parser",
+  "version": "1.0.3",
+  "main": "GitHubRepoParser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^3.2.5"
+  },
+  "description": ""
+}
