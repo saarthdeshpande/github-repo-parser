@@ -32,7 +32,7 @@ const parser = new GitHubRepoParser(<YOUR_GITHUB_API_KEY>)
 ```
 
 <h2>Sample Output</h2>
-```jsx
+```json5
 {
     gitignore: [
         'https://raw.githubusercontent.com/saarthdeshpande/book-summarizer/master/.gitignore'
