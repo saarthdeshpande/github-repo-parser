@@ -32,6 +32,7 @@ const parser = new GitHubRepoParser(<YOUR_GITHUB_API_KEY>)
 ```
 
 <h2>Sample Output</h2>
+
 ```yaml
 {
     gitignore: [
