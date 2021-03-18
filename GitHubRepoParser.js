@@ -19,13 +19,16 @@ class GitHubRepoParser {
         console.log(`Collecting Level #${++level} files.`)
         listOfFiles.map(file => {
             const dotIndex = file.download_url ? file.download_url.lastIndexOf('.') + 1 : file.download_url
-            file.type === 'file' ?
-            this.rawUrls[file.download_url.substring(dotIndex, )]   // if key exists in dictionary
-                ?
-                this.rawUrls[file.download_url.substring(dotIndex, )].push(file.download_url)
-                :
-                this.rawUrls[file.download_url.substring(dotIndex, )] = [file.download_url]
-         : ''})
+            let extension;
+            if (file.type === 'file') {
+                file.download_url.substring(dotIndex,).includes('/') ? extension = 'Miscellaneous' : extension = file.download_url.substring(dotIndex,)
+                this.rawUrls[extension]   // if key exists in dictionary
+                    ?
+                    this.rawUrls[extension].push(file.download_url)
+                    :
+                    this.rawUrls[extension] = [file.download_url]
+            }
+        })
         if (listOfFiles.filter(file => file.type === 'dir').length === 0) {
             return;
         } else {
